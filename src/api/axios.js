@@ -2,7 +2,7 @@
 import axios from "axios";
 
 const instance = axios.create({
-  baseURL: "http://localhost:5000/api/v1", // match backend port
+  baseURL: "https://bookstore-server-k9xf.onrender.com/api/v1", // match backend port
   withCredentials: true, // important for sending cookies
 });
 

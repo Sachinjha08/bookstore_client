@@ -1,0 +1,100 @@
+/* Container wrapping the whole profile page */
+.profile-container {
+    padding: 40px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #f8f9fa;
+    min-height: 100vh;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Profile title styling */
+.profile-title {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* The main form box */
+.profile-form {
+    background-color: #fff;
+    padding: 30px;
+    width: 100%;
+    max-width: 400px;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+/* Centered image container */
+.profile-image-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+/* Preview/profile image style */
+.profile-image {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 2px solid #ccc;
+    background-color: #eee;
+}
+
+/* Input fields styling */
+.profile-form input[type="text"],
+.profile-form input[type="email"],
+.profile-form input[type="password"],
+.profile-form input[type="file"] {
+    padding: 10px 12px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 0.95rem;
+    width: 100%;
+    box-sizing: border-box;
+    transition: border-color 0.3s ease;
+}
+
+/* File input has no border */
+.profile-form input[type="file"] {
+    border: none;
+}
+
+/* Input focus effect */
+.profile-form input:focus {
+    outline: none;
+    border-color: #4caf50;
+}
+
+/* Submit button styling */
+.profile-form button {
+    background-color: #4caf50;
+    color: white;
+    padding: 10px 14px;
+    border: none;
+    border-radius: 8px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+/* Hover effect for button */
+.profile-form button:hover {
+    background-color: #388e3c;
+}
+
+/* Responsive adjustments */
+@media (max-width: 480px) {
+    .profile-form {
+        padding: 20px;
+    }
+
+    .profile-title {
+        font-size: 1.5rem;
+    }
+}
